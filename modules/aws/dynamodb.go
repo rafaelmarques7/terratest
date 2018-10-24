@@ -56,7 +56,7 @@ func DeleteDynamodbTable(t *testing.T, region string, name string) {
 }
 
 func DeleteDynamodbTableE(t *testing.T, region string, name string) error {
-	logger.Logf(t, "Deleting DynamoDb table '%s%", name)
+	logger.Logf(t, "Deleting DynamoDb table '%s", name)
 	
 	dynamodbClient, err := NewDynamodbClientE(t, region)
 	if err != nil {
